@@ -72,6 +72,17 @@ section{
     border-radius: 12px;
 
 }
+
+
+.photos img:hover{
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    filter:saturate(170%);
+    border-radius: 12px;
+}
+.photos{
+    overflow: hidden;
+}
 .photos:first-child{
     grid-column:1/2 ;
     grid-row: 1/2;
