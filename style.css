@@ -140,14 +140,14 @@ footer{
 }
 @media screen and (max-width: 640px) {
     .container{
-        margin: 2vh 4vh;
-        padding: 2.5vh 4vh;
+        margin: 2vh 2.5vh;
+        padding: 2.5vh 2.5vh;
         font-size: 8px;
     }
     
     .profile-cont img{
-        width: 100px;
-        height: 100px;
+        width: 120px;
+        height: 120px;
     }
     .info{
         margin: 2vh 0 3vh 0;
