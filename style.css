@@ -241,7 +241,7 @@ footer{
         font-size: 8px;
     }
     .slider{
-        top: 40%;
+        top: 30%;
     }
     .profile-cont img{
         width: 100px;
@@ -269,7 +269,7 @@ footer{
     }
     footer{
         font-size: smaller;
-        margin: 25vh 4vh 5vh 4vh;
+        margin: 20vh 4vh 5vh 4vh;
     }
     
 }
