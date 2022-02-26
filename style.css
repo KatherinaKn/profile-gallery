@@ -241,8 +241,12 @@ footer{
         font-size: 8px;
     }
     .slider{
-        top: 30%;
+        top: 20%;
     }
+    #show{
+	font-size:15px;
+    }
+		
     .profile-cont img{
         width: 100px;
         height: 100px;
