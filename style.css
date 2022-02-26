@@ -15,6 +15,74 @@ body{
     font-size: 14px;
     background-color: #fff;
 }
+
+
+.slider{    
+    z-index: -1;
+    opacity: 0;
+	background: rgb(0,0,0,0.9) ;
+	position: absolute;
+    right: 0;
+    top: 185%;
+	width: 100%;
+	transition: opacity 1s;
+}
+
+.slider img{
+    max-height: 100vh;
+}
+.cont{
+    height: 100vh;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.slider-container{
+    height: fit-content;
+    display: grid;
+    grid-template-columns: 50px 1fr 50px;
+    grid-auto-rows: auto;
+    align-items: center;
+    gap: 1em;
+}
+.slider-body{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 1s;
+}
+.slider-body-show{
+    opacity:1;
+    pointer-events: unset;
+}
+.slider-img{
+    width: 100%;
+    object-fit: scale-down;
+    display: block;
+    margin: 0 auto;
+}
+.slider-arrow{
+    color: #E5E5E5;
+    background: none;
+    cursor: pointer;
+    width: 90%;
+    border: none;
+}
+
+#next i{
+    justify-content: flex-end;
+    margin-right: 0;
+}
+#exit{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    color: #E5E5E5;
+    background: none;
+    border: none;
+
+}
+
 .top-cont{
     display: flex;
     flex-direction: column;
@@ -47,7 +115,7 @@ h2{
     font-size: 16px;
     font-weight: 600;
 }
-section{
+.info section{
     width: 110px;
     height: 70px;
     border: 1px solid #E6E6E6;
@@ -71,17 +139,6 @@ section{
     height: auto;
     border-radius: 12px;
 
-}
-
-
-.photos img:hover{
-    -webkit-transform: scale(1.2);
-    transform: scale(1.2);
-    filter:saturate(170%);
-    border-radius: 12px;
-}
-.photos{
-    overflow: hidden;
 }
 .photos:first-child{
     grid-column:1/2 ;
@@ -107,6 +164,31 @@ section{
     grid-column: 2/3;
     grid-row: 3/4;
 }
+.photos img:hover{
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    filter:saturate(170%);
+    border-radius: 12px;
+}
+.photos{
+    overflow: hidden;
+}
+#show{
+    margin-top: 35px;
+    padding: 10px;
+    background: #E5E5E5;
+    color: #4e5150;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+}
+#show:hover{
+    background:#999; 
+    color: #E5E5E5;
+
+}
+
+
 footer{
     background-color: #fff;
 	margin: 25vh 16vh 5vh 16vh;
@@ -124,6 +206,9 @@ footer{
         font-size: 10px;
     }
     
+    .slider{
+        top: 60%;
+    }
     .profile-cont img{
         width: 150px;
         height: 150px;
@@ -131,7 +216,7 @@ footer{
     .info{
         margin: 3.5vh 0;
     }    
-    section{
+    .info section{
         width: 80px;
         height: 45px;
     }
@@ -155,15 +240,17 @@ footer{
         padding: 2.5vh 2.5vh;
         font-size: 8px;
     }
-    
+    .slider{
+        top: 50%;
+    }
     .profile-cont img{
-        width: 120px;
-        height: 120px;
+        width: 100px;
+        height: 100px;
     }
     .info{
         margin: 2vh 0 3vh 0;
     }    
-    section{
+    .info section{
         width: 60px;
         height: 35px;
     }
