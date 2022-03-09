@@ -13,6 +13,8 @@ body{
     font-family: 'Montserrat', sans-serif;
     text-align:center;    
     font-size: 14px;
+    overflow: hidden;
+    max-width: 1400px;
     background-color: #fff;
 }
 
@@ -146,6 +148,7 @@ h2{
 }
 .agregar-imagen{
     object-fit: cover;
+    width: 60%;
     border-radius: 10px;
     transform: scale(0);
     transition: transform .3s .2s;
@@ -160,21 +163,6 @@ h2{
     right:15px;
     width: 50px;
     cursor: pointer;
-}
-
-#show{
-    margin-top: 35px;
-    padding: 10px;
-    background: #E5E5E5;
-    color: #4e5150;
-    font-size: 20px;
-    border: none;
-    cursor: pointer;
-}
-#show:hover{
-    background:#999; 
-    color: #E5E5E5;
-
 }
 
 
