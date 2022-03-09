@@ -124,6 +124,9 @@ h2{
     filter:saturate(170%);
     border-radius: 12px;
 }
+.gallery{    
+    overflow: hidden;
+}
 .imagen-light{
     position: fixed;
     background: rgba(0, 0, 0,.7);
